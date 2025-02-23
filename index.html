@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Guia de Consulta Rápida - Indicadores APS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="icon" href="spock.png" type="image/x-icon">
+
+  <title>Tabela</title>
+  <style>
+    table {
+      width: 60%;
+      border-collapse: collapse;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    th {
+      background-color: #ddd;
+    }
+
+    td small {
+      font-size: 12px;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container mt-5">
+
+    <h1 class="text-center mb-4 animate__animated animate__fadeIn"
+      style="font-family: 'Roboto', sans-serif; color: #fff; background-color: #1976D2; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);">
+      <img src="logo.png" alt="Logo" style="max-width: 60%; vertical-align: middle;">
+      <P><b>Spock</b>
+        <img src="spock.png" alt="Spock" style="max-width: 5%; vertical-align: middle;">
+        <br> Guia de Consulta dos Indicadores
+      </P>
+    </h1>
+
+    <h6><b>Desenvolvido por: Lucas Bahri - Coordenador Dep. Saúde Digital e Inovação.</b></h6>
+
+    <p></p>
+    <ul class="nav nav-tabs" id="categoryTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="vinculo-tab" data-bs-toggle="tab" data-bs-target="#vinculo" type="button"
+          role="tab" aria-controls="vinculo" aria-selected="true"> Vínculo e Acompanhamento Territorial </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="saude-bucal-tab" data-bs-toggle="tab" data-bs-target="#saude-bucal" type="button"
+          role="tab" aria-controls="saude-bucal" aria-selected="false">Saúde Bucal</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="estrategia-tab" data-bs-toggle="tab" data-bs-target="#estrategia" type="button"
+          role="tab" aria-controls="estrategia" aria-selected="false">Estratégia Saúde da Família</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="equipes-tab" data-bs-toggle="tab" data-bs-target="#equipes" type="button"
+          role="tab" aria-controls="equipes" aria-selected="false">Equipes Multiprofissionais</button>
+      </li>
+    </ul>
+
+    <div class="tab-content mt-4" id="categoryTabsContent">
+      <div class="tab-pane fade show active" id="vinculo" role="tabpanel" aria-labelledby="vinculo-tab">
+        <div class="row">
+
+          <div class="container mt-5">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="card shadow-lg border-0">
+                  <div class="card-header bg-primary text-white text-center">
+                    <h4>Objetivo</h4>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        Visa garantir a qualidade do cadastro da população atendida, aprimorar a gestão e reduzir
+                        barreiras de
+                        acesso aos serviços de saúde.
+                      </li>
+                      <li class="list-group-item">
+                        Considera a quantidade e a qualidade dos cadastros individuais e domiciliares no sistema
+                        SISAB.
+                      </li>
+                      <li class="list-group-item">
+                        Estruturado em duas dimensões: <b> Cadastro</b> e <b> Acompanhamento. </b>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container mt-5">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="card shadow-lg border-0">
+                  <div class="card-header bg-danger text-white text-center">
+                    <h4>Regras</h4>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        <b>Usuário Cadastro: </b>CPF, CNS e Data de Nascimento identicos IDS e CADSUS. 
+                      </li>
+                      <li class="list-group-item">
+                        <b>CNES: </b> Vinculo correto com a equipe.
+                      </li>
+                      <li class="list-group-item">
+                        <b>Registros Retroativos: </b> Devem ser digitados no mesmo mês.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container mt-5">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="card shadow-lg border-0">
+                  <div class="card-header bg-dark text-white text-center">
+                    <h4>Critérios de Vinculação dos Usuários</h4>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item"><b>1 - </b>Maior número de atendimentos no último ano</li>
+                      <li class="list-group-item"><b>2 - </b>Atendimento mais recente</li>
+                      <li class="list-group-item"><b>3 - </b>Cadastro mais atualizado</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container mt-5">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="card shadow-lg border-0">
+                  <div class="card-header bg-success text-white text-center">
+                    <h6>Cada indicador recebe uma pontuação, resultando em uma classificação final que impacta o
+                      financiamento
+                      federal destinado às equipes de APS.</h6>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="container mt-5 text-center">
+                <button type="button" class="btn btn-primary" id="btnCadastro">
+                  Indicador Cadastro
+                </button>
+
+                <div class="alert alert-info mt-3 d-none" id="alertCadastro">
+
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      Considerar apenas cadastros individuais feitos ou atualizados nos últimos 24 meses (até o último
+                      mês
+                      do quadrimestre avaliado).
+                    </li>
+                  </ul>
+
+                  <div class="container mt-5">
+                    <div class="row justify-content-center">
+                      <div class="col-md-8">
+                        <div class="card shadow-lg border-0">
+                          <div class="card-header bg-primary text-white text-center">
+                            <h4>Tipos de Cadastros</h4>
+                          </div>
+                          <div class="card-body">
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                <strong>Simplificado:</strong> Não será considerado (MICI).
+                              </li>
+                              <li class="list-group-item">
+                                <strong>Pessoa cadastrada:</strong> Possui cadastro individual (MICI).
+                              </li>
+                              <li class="list-group-item">
+                                <strong>Pessoa com cadastro completo:</strong> Possui cadastro individual (MICI) e
+                                domiciliar/territorial (MICDT).
+                              </li>
+                              <li class="list-group-item">
+                                <strong>Pessoa com cadastro atualizado:</strong> Cadastro atualizado nos últimos 24
+                                meses,
+                                avaliado separadamente para MICI e MICDT.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="container mt-5">
+                    <div class="row justify-content-center">
+                      <div class="col-md-8">
+                        <div class="card shadow-lg border-0">
+                          <div class="card-body">
+                            Aplicar um fator multiplicador para que quem tiver cadastro individual e
+                            domiciliar/territorial
+                            receba o dobro da pontuação, conforme o quadro abaixo.
+                            <table class="table table-bordered">
+                              <thead class="table-primary">
+                                <tr>
+                                  <th>Tipos de cadastro/modelo de informação</th>
+                                  <th>Fator de multiplicação</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    Cadastro Simplificado <br>
+                                  </td>
+                                  <td>Não será considerado</td>
+                                </tr>
+                                <tr>
+                                  <td>Cadastro individual (MICI)</td>
+                                  <td>0.75</td>
+                                </tr>
+                                <tr>
+                                  <td>Cadastro individual e cadastro domiciliar e territorial (MICI + MICDT)</td>
+                                  <td>1.5</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p></p>
+                </div>
+              </div>
+
+              <script>
+                document.getElementById("btnCadastro").addEventListener("click", function () {
+                  let alertBox = document.getElementById("alertCadastro");
+                  alertBox.classList.toggle("d-none"); // Alterna a exibição do alerta
+                });
+              </script>
+
+              <div class="container mt-5 text-center">
+                <button type="button" class="btn btn-warning" id="btnAcompanhamento">
+                Indicador  Acompanhamento
+                </button>
+
+                <div class="alert alert-info mt-3 d-none" id="alertAcompanhamento">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <b>Acompanhamento:</b> Mede a frequência de contatos assistenciais e o envolvimento das equipes
+                      (eSF,
+                      eAP, eSB e eMulti) com os usuários, priorizando grupos vulneráveis.
+                    </li>
+                    <li class="list-group-item">
+                      <b>Pessoa acompanhada:</b> Que teve mais de um contato assistencial com um profissional de saúde
+                      em um período de 12 meses, sendo que pelo menos um deve ser um atendimento (individual, coletivo
+                      ou
+                      domiciliar).
+                    </li>
+                  </ul>
+
+                  <div class="container mt-5">
+                    <div class="row justify-content-center">
+                      <div class="col-md-8">
+                        <div class="card shadow-lg border-0">
+                          <div class="card-header bg-primary text-white text-center">
+                            <h4>Contatos assistenciais</h4>
+                          </div>
+                          <div class="card-body">
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                <strong>Atendimento + Procedimento:</strong> Ex.: consulta + vacinação ou curativo.
+                              </li>
+                              <li class="list-group-item">
+                                <strong>Atendimento + Atendimento:</strong> Ex.: consulta médica + atendimento
+                                odontológico.
+                              </li>
+                              <li class="list-group-item">
+                                <strong>Procedimentos incluem:</strong> Registros de vacinação (MIV) e de outros
+                                procedimentos
+                                realizados, por exemplo, escuta inicial ou curativo (MIP).
+                              </li>
+                              <li class="list-group-item">
+                                <strong>Atendimentos incluem:</strong> Registros de atendimento individual (MIAI),
+                                atendimento odontológico
+                                (MIAOI), atividade coletiva (MIAC), marcadores de consumo alimentar (MIMCA) e
+                                visita
+                                domiciliar
+                                e territorial (MIVDT).
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="container mt-4">
+                    <table class="table table-bordered text-center">
+                      <thead class="table-danger">
+                        <tr>
+                          <th rowspan="2" class="align-middle">Sem critérios</th>
+                          <th colspan="3">Vulnerabilidade - Com critérios</th>
+                        </tr>
+                        <tr>
+                          <th>Idoso ou Criança</th>
+                          <th>BPC ou PBF</th>
+                          <th>Idoso ou Criança + BPC ou PBF</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1.0</td>
+                          <td>1.2</td>
+                          <td>1.3</td>
+                          <td>2.5</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <b>BPC:</b> Benefício de Prestação Continuada. <br> <b>PBF:</b> Programa Bolsa Família.
+                    </li>
+                  </ul>
+
+                  <p></p>
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <i><b>Satisfação do Usuário:</b> As equipes que tiverem a população atendida e seu usuário avaliar
+                        o atendimento no aplicativo Meu SUS Digital receberão uma pontuação extra que será acrescida ao
+                        escore de acompanhamento.</i>
+                    </li>
+                  </ul>
+
+                  <div class="container mt-4">
+                    <table class="table table-bordered text-center">
+                      <thead class="table-primary">
+                        <tr>
+                          <th>Faixa de Avaliação</th>
+                          <th>Acréscimo ao Escore</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>0 a menos de 5% dos atendimentos avaliados</strong></td>
+                          <td>0,15 pontos</td>
+                        </tr>
+                        <tr>
+                          <td><strong>5% ou mais dos atendimentos avaliados</strong></td>
+                          <td>0,30 pontos</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Limite máximo do escore</strong></td>
+                          <td>O valor final do escore não pode ultrapassar 7,00</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Base de cálculo</strong></td>
+                          <td>Total de atendimentos registrados no SISAB no quadrimestre avaliado</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Objetivo</strong></td>
+                          <td>Incentivar a participação na avaliação dos serviços de saúde para promover melhorias
+                            baseadas
+                            na
+                            experiência dos usuários</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <p></p>
+
+                </div>
+              </div>
+
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <script>
+          document.getElementById("btnAcompanhamento").addEventListener("click", function () {
+            let alertBox = document.getElementById("alertAcompanhamento");
+            alertBox.classList.toggle("d-none"); // Alterna a exibição do alerta
+          });
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<!-- Rodapé -->
+<footer class="bg-light text-black pt-4 pb-3 mt-5">
+  <div class="container text-center text-md-start">
+    <div class="row">
+      <!-- Informações do Site -->
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h5 class="text-uppercase">Sobre</h5>
+        <p>
+          <b>Spock</b> - Guia de Consulta dos Indicadores é um Portal para consulta de dados das equipes de saúde
+          de Prudentópolis/PR.
+        </p>
+      </div>
+      <!-- Contato -->
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h5 class="text-uppercase">Contato</h5>
+        <p>
+          <b>Email:</b> <a href="mailto:informatica.saude@prudentopolis.pr.gov.br" class="text-black"
+            style="text-decoration: none;">informatica.saude@prudentopolis.pr.gov.br</a>
+        </p>
+      </div>
+    </div>
+    <hr class="bg-white">
+    <div class="text-center text-black">
+      © 2025 - Todos os direitos reservados. Nenhuma parte deste material pode ser reproduzida sem permissão.
+    </div>
+  </div>
+</footer>
+
+</html>
